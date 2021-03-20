@@ -65,14 +65,14 @@ ggplot(Whickham, aes(x = smoker)) +
 
 ```{r plot_age}
 ggplot(Whickham, aes(x = age)) +
-  geom_bar()
+  geom_boxplot()
 ```
 
 
 4. 
 
 ```{r plot_smokeVSincome_1}
-
+ggplot(data=Whickham, aes(x=smoker, y=outcome, color=outcome)) + geom_bar(stat="identity")
 ```
 
 Knit, commit, and push to github.
